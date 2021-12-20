@@ -2,5 +2,5 @@
  COD(해양오염지수) 예측을 통한 특별관리해역 선정
 
 ## 데이터 프레임
-
+![image](https://github.com/worldpapa/joiss/blob/main/pic/dataframe.png)
 
