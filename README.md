@@ -166,7 +166,7 @@ JOISS 해양환경측정망 데이터에는 COD를 포함한 환경데이터 측
 
 중복이 되지 않는 구역이 어느 구역인지 확인하고 이를 제거 할 것입니다.
 
-![image](https://github.com/worldpapa/joiss/blob/main/pic/pic12.png)
+![image](https://github.com/worldpapa/joiss/blob/main/pic/pc12.png)
 
 ### 2.4.2 그룹1 (2월 8월)
 
