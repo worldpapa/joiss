@@ -119,3 +119,68 @@ JOISS 해양환경측정망 자료에는 COD를 포함한 환경데이터 측정
 
 ![image](https://github.com/worldpapa/joiss/blob/main/pic/pic4.png)
 
+![image](https://github.com/worldpapa/joiss/blob/main/pic/pic5.png)
+
+## 2.2 결측치 데이터 확인
+
+![image](https://github.com/worldpapa/joiss/blob/main/pic/pic6.png)
+
+![image](https://github.com/worldpapa/joiss/blob/main/pic/pic7.png)
+
+> 결측치를 가진 데이터는 발견되지 않았습니다.
+
+## 2.3 데이터 주기 확인
+
+**월 주기를 기준으로 COD 예측 모델**을 만들 것이기 때문에 데이터의 월별 주기성을 확인하였습니다.
+
+JOISS 해양환경측정망 데이터에는 COD를 포함한 환경데이터 측정값이 3개월을 주기로 정리되어 있지만
+
+
+2월에 미쳐 다 측정하지 못하여 3월에 측정된 데이터들을 확인하였습니다.
+
+![image](https://github.com/worldpapa/joiss/blob/main/pic/pic8.png)
+
+![image](https://github.com/worldpapa/joiss/blob/main/pic/pic9.png)
+
+> 3월의 데이터는 47개로 확인하였습니다.
+> 따라서 3월 데이터를 2월 데이터로 치환하였습니다.
+
+## 2.4 그룹핑
+
+### 2.4.1 2월, 8월, 5월, 11월 각 구역 수 확인
+
+3개월을 주기로 측정된 데이터에서 월별 측정 구역의 수를 보면 2월과 8월은 420여개, 5월과 11월은 370여개인 것을 확인하였습니다.
+
+![image](https://github.com/worldpapa/joiss/blob/main/pic/pic10.png)
+
+> 따라서 월별로 데이터 프레임을 만들고 6개년에서 중복되지 않는 구역을 제거하였습니다.
+
+![image](https://github.com/worldpapa/joiss/blob/main/pic/pic11.png)
+
+
+측정 구역의 수가 유사한 월끼리 묶어 공통 구역의 수를 구해보면 2월과 8월은 409개, 5월과 11월은 361개 구역 입니다. 
+
+이는 대부분의 측정 구역이 같다는 것을 의미하므로 중복되지 않는 구역을 제거할 것입니다.
+
+따라서 **2월 + 8월 겨울 여름 데이터(그룹 1), 5월 + 11월 봄 가을 데이터(그룹 2)**로 그룹핑하여 
+
+중복이 되지 않는 구역이 어느 구역인지 확인하고 이를 제거 할 것입니다.
+
+![image](https://github.com/worldpapa/joiss/blob/main/pic/pic12.png)
+
+### 2.4.2 그룹1 (2월 8월)
+
+2월과 8월 데이터를 병합하여, 앞서 확인한 중복되지 않는 구역을 제거한 데이터 프레임 'df28' 를 생성하였습니다.
+
+![image](https://github.com/worldpapa/joiss/blob/main/pic/pic13.png)
+
+> 최종적으로 2월과 8월의 공통 구역의 수는 409개로 확인하였습니다.
+
+### 2.4.3 그룹 2 (5월 11월)
+
+5월과 11월 데이터를 병합하여, 앞서 확인한 중복되지 않는 구역을 제거한 데이터 프레임 'df511' 를 생성하였습니다.
+
+![image](https://github.com/worldpapa/joiss/blob/main/pic/pic14.png)
+
+> 최종적으로 5월과 11월의 공통 구역의 수는 361개로 확인하였습니다.
+
