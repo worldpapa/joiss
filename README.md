@@ -51,7 +51,7 @@ COD가 크게 증가하는 구역을 선별한 뒤 특별관리해역을 관리
 화학적 오염물질들이 완전히 제거되지 않는 환경 속에서 현재도 많은 해양생물들은 힘겹게 숨 쉬며 살아가고 있으며,  
 해안 곳곳에서 **해양오염으로 인한 물고기 떼죽음**이 빈번하게 발생하고 있습니다.  
 
-pic1
+![image](https://github.com/worldpapa/joiss/blob/main/pic/pic1.png)
 
 ## 1.1 특별관리해역과 COD란?
 
@@ -60,7 +60,7 @@ pic1
 > [특별관리해역](https://www.index.go.kr/potal/stts/idxMain/selectPoSttsIdxMainPrint.do?idx_cd=1273&board_cd=INDX_001)은 인근에 다른 해역에 비해 국민의 건강 및 해양환경의 보전을 위해 특별히 관리가 필요한 해역으로서,  
 해역 안에서의 시설의 설치와 변경에 제한을 두고 소재하는 사업장에서 배출되는 오염물질의 총량을 규제하는 방식으로 관리합니다.
 
-pic2
+![image](https://github.com/worldpapa/joiss/blob/main/pic/pic2.png)
 
 > [화학적 산소 요구량](http://www.guro.go.kr/www/contents.do?key=2830&) (COD, Chemical Oxygen Demand)은 대표적인 오염물질 총량규제 항목입니다.  
 해양이나 호수에 흘러 들어온 유해물질을 함유한 공장 폐수의 오염도를 알고자 할 때 COD를 이용합니다.
@@ -71,7 +71,7 @@ pic2
 
 - 2015~2020년 광양만,인천연안 COD 추세  
 
-pic3
+![image](https://github.com/worldpapa/joiss/blob/main/pic/pic3.png)
 
 그러나 특별관리해역 중 광양만과 인천연안의 **연도별 COD는 꾸준히 증가**하는 것을 확인할 수 있습니다. 단기적으로 COD가 개선되는 것으로 보였으나, 장기적으로 보았을 때 COD가 점차 증가하는 추세를 보입니다.
 
@@ -110,12 +110,12 @@ JOISS 해양환경측정망 자료에는 COD를 포함한 환경데이터 측정
 
 해양환경측정망_2020_profile_chemical.csv
 
+
 2015년부터 2020년까지의 데이터를 하나의 데이터프레임으로 병합하고 측정 날짜와 시간을 데이터프레임에 나타내 주었습니다.
 
 해양수산부는 **특별관리해역 표층수의 COD를 측정하여 수질현황**을 나타내고 있기 때문에 수심 데이터 중 **‘표층’**만 남겨두었고, 
 
 데이터프레임에서 필요하지 않은 feature를 삭제하고 결측치를 제거하였습니다.
 
-
-pic4
+![image](https://github.com/worldpapa/joiss/blob/main/pic/pic4.png)
 
