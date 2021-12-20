@@ -412,6 +412,6 @@ COD증감비율이 가장 높은 ‘군산연안5연안’은 237%로 큰 폭으
 
 # 성과
 
-![image](https://github.com/worldpapa/joiss/blob/main/pic/awards.png)
+![image](https://github.com/worldpapa/joiss/blob/main/pic/award.png)
 [2021 JOISS 해양과학 빅데이터 활용 경진대회](https://dacon.io/competitions/official/235793/)
 * 해당 대회에서 5위의 성적으로 대한원격탐사학회장상 수상
