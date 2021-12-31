@@ -1,6 +1,10 @@
 # 2021 JOISS 해양과학 빅데이터 활용 경진대회 
  JOISS의 해양환경측정망 데이터를 활용하여 COD(해양오염지수)를 예측하고,
+ 
 COD가 크게 증가하는 구역을 선별한 뒤 특별관리해역을 관리
+
+
+** 자세한 코드는 [클릭](https://github.com/worldpapa/joiss/blob/main/JOISS_worldpapa.ipynb) 참고 바랍니다.
 
 ## 목차
 
